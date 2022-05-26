@@ -19,11 +19,11 @@
 
     <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo">Madhushan Karunachandra</div>
+        <div class="logo word"></div>
         <ul class="links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -52,6 +52,17 @@
             <p>Currently, I am 3<sup>rd</sup> year Undergraduate, who follows the BSc (Hons) in Software Engineering Degree Program at Sri Lanka Technological Campus.
                 I am really passionate about the Software Engineering field and working in a competitive and innovative environment that would allow me to utilize and sharpen my programming and software development skills.
             </p>
+            <a class="download-a" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Download CV&nbsp&nbsp&nbsp<i class="fa fa-download" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section id="skills">
+
         </section>
     </main>
 
@@ -59,19 +70,7 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-
-        function gotoHome() {
-            window.location.href = "/#about"
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/index.js"></script>
 </body>
 </html>
