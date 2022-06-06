@@ -10,6 +10,18 @@ body {
     box-sizing: border-box;
 }
 
+body.hide-scrolling {
+    overflow-y: hidden;
+}
+
+main {
+    transition: all 0.4s ease-in-out;
+}
+
+main.fade-out {
+    opacity: 0;
+} 
+
 .backgrounds {
     width: 100%;
     height: 100%;
@@ -46,6 +58,10 @@ body {
     overflow: hidden;
     color: #FFF;
     text-align: center;
+}
+
+.hero.fade-out {
+    opacity: 0;
 }
       
 .hero-center {
@@ -177,6 +193,11 @@ nav {
 	height: 50px;
 	background-color: #3e65da;
 }
+
+nav.fade-out {
+    opacity: 0;
+}
+
 nav .logo {
 	float: left;
 	width: 40%;
@@ -636,8 +657,18 @@ nav .icon-burger .line {
     width: 100%;
     height: 100%;
     z-index: 200;
-    overflow-y: auto;
     visibility: hidden;
+}
+
+.project-popup.open {
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.project-popup.open .pp-container {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
 }
 
 .pp-inner {
@@ -656,6 +687,8 @@ nav .icon-burger .line {
     width: 100%;
     border: solid 1px black;
     backdrop-filter:var(--backdrop-filter-blur);
+    opacity: 0;
+    transform: scale(0.9);
 }
 
 .pp-header {
