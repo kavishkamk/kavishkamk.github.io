@@ -65,6 +65,8 @@ document.addEventListener("click", (e) => {
 // launch icon
 $(document).ready(function() {
 
+  $('#hero-social-bar').show();
+
 	// track scroll bar in main
 	$(window).on('scroll load', function(){
 
