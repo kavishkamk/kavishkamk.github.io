@@ -62,6 +62,22 @@ document.addEventListener("click", (e) => {
   }
 })
 
+// launch icon
+$(document).ready(function() {
+
+	// track scroll bar in main
+	$(window).on('scroll load', function(){
+
+		// hide or show rocket launch
+		if($(window).scrollTop() > 0) {
+			$('.rocket-nav').show();
+		} else {
+			$('.rocket-nav').hide();
+		}
+	});
+
+});
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

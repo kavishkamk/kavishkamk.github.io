@@ -372,6 +372,10 @@ nav .icon-burger .line {
     #about {
         padding: 70px;
     }
+
+    #skills, #projects, #contact {
+        padding-top: 70px;
+    }
 }
 
 .block {
@@ -1257,4 +1261,37 @@ footer p {
 
 #contact {
     margin-bottom: 0px;
+}
+
+.rocket-nav {
+	position: fixed;
+	bottom: 2rem; right: 2rem;
+	z-index: 100;
+	display: none;
+}
+
+.lonchIcon {
+	width: 40px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 450px) {
+    .rocket-nav {
+        position: fixed;
+        bottom: 2rem; right: 1rem;
+    }
+
+    .lonchIcon {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .rocket-nav {
+        bottom: 3.3rem;
+    }
 }
