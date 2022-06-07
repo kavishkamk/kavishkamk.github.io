@@ -192,6 +192,17 @@ main.fade-out {
   transition: 1s ease;
 }
 
+#hero-social-bar {
+    background-color: white;
+    position: fixed;
+    top: 0.2rem; right: 0.1rem;
+    z-index: 200;
+    padding: 5px 10px;
+    border-top: 1px solid #313646;
+    border-radius: 10px;
+    display: none;
+}
+
 nav {
 	position: fixed;
 	z-index: 10;
@@ -202,6 +213,10 @@ nav {
 	padding: 0 5%;
 	height: 50px;
 	background-color: #3e65da;
+}
+
+.top-hide {
+    display: none;
 }
 
 nav.fade-out {
@@ -1153,7 +1168,7 @@ a.socials-item {
 }
 
 .github-footer {
-    color: #444444;
+    color: white;
 }
 
 .facebook-footer {
@@ -1281,7 +1296,6 @@ footer p {
 
 @media screen and (max-width: 450px) {
     .rocket-nav {
-        position: fixed;
         bottom: 2rem; right: 1rem;
     }
 

@@ -70,8 +70,12 @@ $(document).ready(function() {
 
 		// hide or show rocket launch
 		if($(window).scrollTop() > 0) {
+      $('.top-hide').show();
+      $('#hero-social-bar').hide();
 			$('.rocket-nav').show();
 		} else {
+      $('.top-hide').hide();
+      $('#hero-social-bar').show();
 			$('.rocket-nav').hide();
 		}
 	});
