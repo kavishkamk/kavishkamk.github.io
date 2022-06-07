@@ -197,7 +197,7 @@ main.fade-out {
     position: fixed;
     top: 0.2rem; right: 0.1rem;
     z-index: 200;
-    padding: 5px 10px;
+    padding: 5px 1px;
     border-top: 1px solid #313646;
     border-radius: 10px;
     display: none;
@@ -1005,11 +1005,19 @@ nav .icon-burger .line {
 }
 
 .fixed-social-btn {
-    background: transparent;
+    background-color: white;
     color: black;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 200;
+    padding: 5px 0;
+    border-top: 1px solid #313646;
+    border-radius: 10px;
+}
+
+.side-socials .socials-item {
+    margin-bottom: 5px;
 }
 
 .wrapper-side {
@@ -1133,7 +1141,7 @@ a.socials-item {
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    margin: 0 5px;
+    margin: 0 3px;
     line-height: 16px;
     padding: 10px;
     border-radius: 50%;
@@ -1308,4 +1316,11 @@ footer p {
     .rocket-nav {
         bottom: 3.3rem;
     }
+}
+
+.side-socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
 }
