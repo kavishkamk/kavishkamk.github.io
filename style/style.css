@@ -80,6 +80,8 @@ main.fade-out {
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hero__logo {
@@ -605,7 +607,7 @@ nav .icon-burger .line {
     display: block;
 }
 
-.btn-social-icon {
+.pro-btn-bar .btn-social-icon {
     position: absolute;
     right: 5px;
     margin-left: 5px;
@@ -622,7 +624,7 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 625px) {
-    .btn-social-icon {
+    .pro-btn-bar .btn-social-icon {
         position: relative;
         right: 0;
         margin-left: 0;
@@ -638,7 +640,7 @@ nav .icon-burger .line {
         display: block;
     }
 
-    .btn-social-icon {
+    .pro-btn-bar .btn-social-icon {
         position: absolute;
         right: 5px;
         margin-left: 5px;
@@ -649,7 +651,7 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 300px) {
-    .btn-social-icon {
+    .pro-btn-bar .btn-social-icon {
         position: relative;
         right: 0;
         margin-left: 0;
@@ -830,16 +832,16 @@ nav .icon-burger .line {
     -webkit-transition: box-shadow 0.25s;
     transition: box-shadow 0.25s;
     color: white;
-  }
+}
   
-  .bn30 .text {
+.bn30 .text {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-  }
+}
   
-  .bn30:after {
+.bn30:after {
     content: "";
     border-radius: 18px;
     position: absolute;
@@ -850,16 +852,16 @@ nav .icon-burger .line {
     right: 0;
     z-index: -1;
     background: #0e0e10;
-  }
+}
   
-  .bn30:hover {
+.bn30:hover {
     background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
     box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-  }
+}
   
-  .bn30:hover .text {
+.bn30:hover .text {
     background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  }
+}
 
 .social-icon-bar {
     color: black;
@@ -872,7 +874,7 @@ nav .icon-burger .line {
     padding-left: 0;
 }
   
-.wrapper .icon {
+.wrapper .icon, .wrapper-side .icon {
     position: relative;
     background: #ffffff;
     border-radius: 50%;
@@ -888,9 +890,9 @@ nav .icon-burger .line {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
   
-  .wrapper .tooltip {
+.wrapper .tooltip, .wrapper-side .tooltip{
     position: absolute;
     top: 0;
     font-size: 14px;
@@ -902,9 +904,9 @@ nav .icon-burger .line {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
   
-  .wrapper .tooltip::before {
+.wrapper .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -914,58 +916,84 @@ nav .icon-burger .line {
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
   
-  .wrapper .icon:hover .tooltip {
+.wrapper .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
+}
   
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
+.wrapper .icon:hover span,
+.wrapper-side .icon:hover span,
+.wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .wrapper .linkedIn:hover,
-  .wrapper .linkedIn:hover .tooltip,
-  .wrapper .linkedIn:hover .tooltip::before {
+.wrapper .linkedIn:hover,
+.wrapper-side .linkedIn:hover,
+.wrapper .linkedIn:hover .tooltip,
+.wrapper .linkedIn:hover .tooltip::before {
+    background: #007BB6;
+    color: #ffffff;
+}
+  
+.wrapper .facebook:hover,
+.wrapper-side .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
     background: #1877F2;
     color: #ffffff;
-  }
+}
   
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background: #1877F2;
-    color: #ffffff;
-  }
-  
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
+.wrapper .twitter:hover,
+.wrapper-side .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
     background: #1DA1F2;
     color: #ffffff;
-  }
+}
   
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
+.wrapper .instagram:hover,
+.wrapper-side .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
     background: #E4405F;
     color: #ffffff;
-  }
+}
   
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
+.wrapper .github:hover,
+.wrapper-side .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
     background: #333333;
     color: #ffffff;
-  }
+}
   
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before {
+.wrapper .youtube:hover,
+.wrapper-side .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
     background: #CD201F;
     color: #ffffff;
-  }
+}
+
+.fixed-social-btn {
+    background: transparent;
+    color: black;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper-side {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .fixed-social-btn {
+        display: none;
+    }
+}
