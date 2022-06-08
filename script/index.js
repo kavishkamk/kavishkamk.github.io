@@ -50,6 +50,7 @@ document.addEventListener("click", (e) => {
     togglePortfolioPopup();
     $('#side-social-bar').hide();
     $('#rocket-nav').hide();
+    $("#fotter-div").hide();
     document.querySelector(".project-popup").scrollTo(0,0);
     portfolioItemDetails(e.target.parentElement.parentElement);
   }
@@ -59,6 +60,7 @@ document.querySelector(".pp-close").addEventListener("click", () => {
   togglePortfolioPopup();
   $('#side-social-bar').show();
   $('#rocket-nav').show();
+  $("#fotter-div").show();
 
 });
 
@@ -69,6 +71,7 @@ document.addEventListener("click", (e) => {
     togglePortfolioPopup();
     $('#side-social-bar').show();
     $('#srocket-nav').show();
+    $("#fotter-div").show();
   }
 })
 
