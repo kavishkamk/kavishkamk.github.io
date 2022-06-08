@@ -110,3 +110,7 @@ function portfolioItemDetails(projectItem) {
   document.querySelector(".pp-header h3").innerHTML = projectItem.querySelector(".project-item-title").innerHTML;
   document.querySelector(".pp-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
 }
+
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+}

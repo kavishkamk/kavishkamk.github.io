@@ -49,8 +49,8 @@
     </header>
     <main>
         <section class="section block bg-dark" id="about">
-            <h1>What I Do...</h1>
-            <p>Currently, I am 3<sup>rd</sup> year Undergraduate, who follows the BSc (Hons) in Software Engineering Degree Program at Sri Lanka Technological Campus.
+            <h1>About Me</h1>
+            <p>Hi, I'm Madhushan. Currently, I am a 3<sup>rd</sup> year Undergraduate, who follows the <b>BSc (Hons) in Software Engineering Degree</b> Program at Sri Lanka Technological Campus. 
                 I am really passionate about the Software Engineering field and working in a competitive and innovative environment that would allow me to utilize and sharpen my programming and software development skills.
             </p>
             <a class="download-a" href="#">
@@ -212,32 +212,32 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
                     <div class="contact-info-item col">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Call Us On</h4>
-                        <p>+94 71 3899 180</p>
+                        <a href="tel:+9471-389-9180" class="contact-link"><div class="icon"><i class="fa fa-phone"></i></div></a>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+9471-389-9180" class="contact-link">+9471-389-9180</a></p>
                     </div>
                     <div class="contact-info-item col">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <a href="mailto:kavishkamadhushan99727@gmail.com" class="contact-link"><div class="icon"><i class="fa fa-envelope"></i></div></a></p>
                         <h4>Email</h4>
-                        <p class="long-email">kavishkamadhushan99727@gmail.com</p>
+                        <p class="long-email"><a href="mailto:kavishkamadhushan99727@gmail.com" class="contact-link">kavishkamadhushan99727@gmail.com</a></p>
                     </div>
                     <div class="contact-info-item col">
-                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <a href="https://goo.gl/maps/bPG3vtqKypQ7yWWp6" target="_blank" class="contact-link"><div class="icon"><i class="fa fa-map-marker"></i></div></a>
                         <h4>Address</h4>
-                        <p>No 90, Colombo road, Piliyandala</p>
+                        <p><a href="https://goo.gl/maps/bPG3vtqKypQ7yWWp6" target="_blank" class="contact-link">No 90, Colombo road, Piliyandala</a></p>
                     </div>
                 </div>
                 <div class="social-icon-bar">
                     <ul class="wrapper">
-                        <li class="icon linkedIn">
+                        <li class="icon linkedIn" onclick="openInNewTab('https://www.linkedin.com/in/kavishka-madhushan-karunachandra/')">
                             <span class="tooltip">LinkedIn</span>
                             <span><i class="fa fa-linkedin"></i></span>
                         </li>
-                        <li class="icon github">
+                        <li class="icon github" onclick="openInNewTab('https://github.com/kavishkamk')">
                             <span class="tooltip">Github</span>
                             <span><i class="fa fa-github"></i></span>
                         </li>
-                        <li class="icon facebook">
+                        <li class="icon facebook" onclick="openInNewTab('https://www.facebook.com/profile.php?id=100041043933003')">
                           <span class="tooltip">Facebook</span>
                           <span><i class="fa fa-facebook-f"></i></span>
                         </li>
@@ -252,41 +252,45 @@
                       </ul>
                 </div>
                 <h3 class="contact-title">Send Me An Email</h3>
-                <div class="row">
-                    <div class="contact-form padd-15">
-                        <div class="row row row-cols-1 row-cols-sm-2">
-                            <div class="form-item padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
+                <form action="https://formsubmit.co/" method="POST">
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row row row-cols-1 row-cols-sm-2">
+                                <div class="form-item padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-item padd-15">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-item padd-15">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="_subject" class="form-control" placeholder="Subject" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="" placeholder="Message" required></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="" placeholder="Message"></textarea>
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_autoresponse" value="Thank you very much.!">
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="bn30">Send Message &nbsp&nbsp&nbsp<i class="fa fa-paper-plane"></i></button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <button type="submit" class="bn30">Send Message &nbsp&nbsp&nbsp<i class="fa fa-paper-plane"></i></button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -311,16 +315,16 @@
     <div class="fixed-social-btn top-hide">
         <div id="side-socials">
             <div class="side-socials socials-colored">
-                <a href="#" target="_blank" title="LinkedIn" class="socials-item">
+                <a href="https://www.linkedin.com/in/kavishka-madhushan-karunachandra/" target="_blank" title="LinkedIn" class="socials-item">
                     <i class="fa fa-linkedin linkedin-footer"></i>
                 </a>
-                <a href="#" target="_blank" title="GitHub" class="socials-item">
+                <a href="https://github.com/kavishkamk" target="_blank" title="GitHub" class="socials-item">
                     <i class="fa fa-github github-footer"></i>
                 </a>
-                <a href="#" target="_blank" title="Facebook" class="socials-item">
+                <a href="https://www.facebook.com/profile.php?id=100041043933003" target="_blank" title="Facebook" class="socials-item">
                     <i class="fa fa-facebook-f facebook-footer"></i>
                 </a>
-                <a href="#" target="_blank" title="Twitter" class="socials-item">
+                <a href="https://twitter.com/Madhushan727?t=1Fb42N5LLGsKxhpJjFpkuQ&s=08" target="_blank" title="Twitter" class="socials-item">
                     <i class="fa fa-twitter twitter-footer"></i>
                 </a>
                 <!-- <a href="#" target="_blank" title="Instagram" class="socials-item">
@@ -329,7 +333,7 @@
                 <!-- <a href="#" target="_blank" title="YouTube" class="socials-item">
                     <i class="fa fa-youtube youtube-footer"></i>
                 </a> -->
-                <a href="#" target="_blank" title="Telegram" class="socials-item">
+                <a href="https://t.me/kavishkamk" target="_blank" title="Telegram" class="socials-item">
                     <i class="fa fa-telegram telegram-footer"></i>
                 </a>
             </div>
@@ -342,16 +346,16 @@
 
     <div id="hero-social-bar">
         <div class="socials inline-inside socials-colored">
-          <a href="#" target="_blank" title="LinkedIn" class="socials-item">
+          <a href="https://www.linkedin.com/in/kavishka-madhushan-karunachandra/" target="_blank" title="LinkedIn" class="socials-item">
              <i class="fa fa-linkedin linkedin-footer"></i>
           </a>
-          <a href="#" target="_blank" title="GitHub" class="socials-item">
+          <a href="https://github.com/kavishkamk" target="_blank" title="GitHub" class="socials-item">
             <i class="fa fa-github github-footer"></i>
           </a>
-          <a href="#" target="_blank" title="Facebook" class="socials-item">
+          <a href="https://www.facebook.com/profile.php?id=100041043933003" target="_blank" title="Facebook" class="socials-item">
             <i class="fa fa-facebook-f facebook-footer"></i>
           </a>
-          <a href="#" target="_blank" title="Twitter" class="socials-item">
+          <a href="https://twitter.com/Madhushan727?t=1Fb42N5LLGsKxhpJjFpkuQ&s=08" target="_blank" title="Twitter" class="socials-item">
             <i class="fa fa-twitter twitter-footer"></i>
           </a>
           <!-- <a href="#" target="_blank" title="Instagram" class="socials-item">
@@ -360,7 +364,7 @@
           <!-- <a href="#" target="_blank" title="YouTube" class="socials-item">
             <i class="fa fa-youtube youtube-footer"></i>
           </a> -->
-          <a href="#" target="_blank" title="Telegram" class="socials-item">
+          <a href="https://t.me/kavishkamk" target="_blank" title="Telegram" class="socials-item">
             <i class="fa fa-telegram telegram-footer"></i>
           </a>
         </div>
@@ -391,16 +395,16 @@
                 <div class="col-12 col-xl-3 footer-social-container">
                   <div id="footer-socials">
                     <div class="socials inline-inside socials-colored">
-                      <a href="#" target="_blank" title="LinkedIn" class="socials-item">
+                      <a href="https://www.linkedin.com/in/kavishka-madhushan-karunachandra/" target="_blank" title="LinkedIn" class="socials-item">
                          <i class="fa fa-linkedin linkedin-footer"></i>
                       </a>
-                      <a href="#" target="_blank" title="GitHub" class="socials-item">
+                      <a href="https://github.com/kavishkamk" target="_blank" title="GitHub" class="socials-item">
                         <i class="fa fa-github github-footer"></i>
                       </a>
-                      <a href="#" target="_blank" title="Facebook" class="socials-item">
+                      <a href="https://www.facebook.com/profile.php?id=100041043933003" target="_blank" title="Facebook" class="socials-item">
                         <i class="fa fa-facebook-f facebook-footer"></i>
                       </a>
-                      <a href="#" target="_blank" title="Twitter" class="socials-item">
+                      <a href="https://twitter.com/Madhushan727?t=1Fb42N5LLGsKxhpJjFpkuQ&s=08" target="_blank" title="Twitter" class="socials-item">
                         <i class="fa fa-twitter twitter-footer"></i>
                       </a>
                       <!-- <a href="#" target="_blank" title="Instagram" class="socials-item">
@@ -409,7 +413,7 @@
                       <!-- <a href="#" target="_blank" title="YouTube" class="socials-item">
                         <i class="fa fa-youtube youtube-footer"></i>
                       </a> -->
-                      <a href="#" target="_blank" title="Telegram" class="socials-item">
+                      <a href="https://t.me/kavishkamk" target="_blank" title="Telegram" class="socials-item">
                         <i class="fa fa-telegram telegram-footer"></i>
                       </a>
                     </div>
