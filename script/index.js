@@ -48,17 +48,27 @@ $(document).ready(function () {
 document.addEventListener("click", (e) => {
   if(e.target.classList.contains("view-project-btn")) {
     togglePortfolioPopup();
+    $('#side-social-bar').hide();
+    $('#rocket-nav').hide();
     document.querySelector(".project-popup").scrollTo(0,0);
     portfolioItemDetails(e.target.parentElement.parentElement);
   }
 });
 
-document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
+document.querySelector(".pp-close").addEventListener("click", () => {
+  togglePortfolioPopup();
+  $('#side-social-bar').show();
+  $('#rocket-nav').show();
+
+});
 
 // hide when click outside of the pop-up
 document.addEventListener("click", (e) => {
+  console.log(e.target.classList);
   if(e.target.classList.contains("pp-inner")) {
     togglePortfolioPopup();
+    $('#side-social-bar').show();
+    $('#srocket-nav').show();
   }
 })
 
@@ -68,13 +78,14 @@ $(document).ready(function() {
   $('#hero-social-bar').show();
 
 	// track scroll bar in main
-	$(window).on('scroll load', function(){
-
+	$(window).on('scroll load', function(e){
 		// hide or show rocket launch
 		if($(window).scrollTop() > 0) {
-      $('.top-hide').show();
       $('#hero-social-bar').hide();
-			$('.rocket-nav').show();
+      if (!($('.project-popup').hasClass('open'))) {
+        $('.top-hide').show();
+        $('.rocket-nav').show();
+      }
 		} else {
       $('.top-hide').hide();
       $('#hero-social-bar').show();
@@ -103,6 +114,7 @@ function togglePortfolioPopup() {
   document.querySelector("nav").classList.toggle("fade-out");
   document.querySelector("main").classList.toggle("fade-out");
   document.querySelector(".hero").classList.toggle("fade-out");
+  document.querySelector("#side-social-bar").classList.toggle("fade-out");
 }
 
 function portfolioItemDetails(projectItem) {

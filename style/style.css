@@ -773,14 +773,36 @@ nav .icon-burger .line {
     margin-bottom: 10px;
     font-weight: 500;
     text-transform: capitalize;
+    display: inline-flex;
 }
 
-.pp-body .genaral-info li span {
+.pp-body .genaral-info li p {
     font-weight: 300;
 }
 
 .pp-body .genaral-info li a {
     text-transform: lowercase;
+}
+
+.pp-p {
+    white-space: nowrap;
+    font-weight: bold !important; 
+}
+
+@media screen and (max-width: 560px) {
+    .pp-p {
+        white-space: normal;
+        padding-right: 5px;
+        margin-bottom: 0;
+    }
+
+    .pp-body .genaral-info li {
+        display: block;
+    }
+
+    .pp-lan {
+        padding-left: 10px;
+    }
 }
 
 .contact-info-item {
