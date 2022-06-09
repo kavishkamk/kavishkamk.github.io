@@ -41,6 +41,9 @@ var wordflick = function () {
   },speed);
 };
 
+const backgroundImg = document.querySelector(".backgrounds");
+let brightnessVal = 0.9;
+
 $(document).ready(function () {
   wordflick();
 });
@@ -82,8 +85,17 @@ $(document).ready(function() {
 
 	// track scroll bar in main
 	$(window).on('scroll load', function(e){
+
+    var windowHeight = window.innerHeight / 3;
+    var scrollHeight = $(window).scrollTop();
+
+    if (scrollHeight < windowHeight) {
+      changeBrightness(scrollHeight, windowHeight);
+    }
+    
 		// hide or show rocket launch
-		if($(window).scrollTop() > 0) {
+		if(scrollHeight > 0) {
+      
       $('#hero-social-bar').hide();
       if (!($('.project-popup').hasClass('open'))) {
         $('.top-hide').show();
@@ -128,4 +140,12 @@ function portfolioItemDetails(projectItem) {
 
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
+}
+
+function changeBrightness(currentValue, maxValue) {
+    backgroundImg.style.filter = `brightness(${scale(currentValue, 0, maxValue, 1, 0.2)})`;
+}
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }

@@ -10,11 +10,12 @@ body {
     font-family: Helvetica,Tahoma;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+}
   
-  *,
-  *:before,
-  *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -37,6 +38,7 @@ main.fade-out {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
     z-index: -1;
+    filter:brightness(0.9);
 }
     
 .backgrounds .background {
