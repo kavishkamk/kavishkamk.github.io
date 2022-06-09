@@ -1,4 +1,10 @@
-var words = ['Madhushan Karunachandra'],
+if (window.innerWidth < 550) {
+  $('#about, #skills, #projects').removeClass('block');
+  $('.word').text('Madhushan Karunachandra');
+} else {
+  $('#about, #skills, #projects').addClass('block');
+
+  var words = ['Madhushan Karunachandra'],
     part,
     i = 0,
     offset = 0,
@@ -41,19 +47,18 @@ var wordflick = function () {
   },speed);
 };
 
-const backgroundImg = document.querySelector(".backgrounds");
-let brightnessVal = 0.9;
-
 $(document).ready(function () {
   wordflick();
 });
+}
+
+const backgroundImg = document.querySelector(".backgrounds");
+let brightnessVal = 0.9;
 
 document.addEventListener("click", (e) => {
   if(e.target.classList.contains("view-project-btn")) {
     togglePortfolioPopup();
-    $('#side-social-bar').hide();
-    $('#rocket-nav').hide();
-    $("#fotter-div").hide();
+    $('#side-social-bar, #rocket-nav, #fotter-div').hide();
     document.querySelector(".project-popup").scrollTo(0,0);
     portfolioItemDetails(e.target.parentElement.parentElement);
   }
@@ -61,10 +66,7 @@ document.addEventListener("click", (e) => {
 
 document.querySelector(".pp-close").addEventListener("click", () => {
   togglePortfolioPopup();
-  $('#side-social-bar').show();
-  $('#rocket-nav').show();
-  $("#fotter-div").show();
-
+  $('#side-social-bar, #rocket-nav, #fotter-div').show();
 });
 
 // hide when click outside of the pop-up
