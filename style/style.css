@@ -1158,16 +1158,6 @@ footer p {
 	transform: rotate(-45deg);
 }
 
-@media screen and (max-height: 600px) {
-    #hero-current-status {
-        display: none;
-    }
-
-    .hero__scroll {
-        bottom: 80px;
-    }
-}
-
 @media screen and (max-width: 768px) {
 	nav .logo {
 		float: none;
@@ -1325,6 +1315,10 @@ footer p {
         width: 1em;
         height: 1em;
         font-size: 16px;
+    }
+
+    .hero__scroll {
+        display: none;
     }
 }
 
