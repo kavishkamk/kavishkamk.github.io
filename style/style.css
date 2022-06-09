@@ -23,9 +23,9 @@ body.hide-scrolling {
     overflow-y: hidden;
 }
 
-main {
+/* main {
     transition: all 0.4s ease-in-out;
-}
+} */
 
 main.fade-out {
     opacity: 0;
@@ -114,7 +114,7 @@ main.fade-out {
     display: block;
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
-    color: #FF4081;
+    color: #03e9f4;
 }
 
 @-webkit-keyframes pulse {
@@ -301,7 +301,7 @@ nav .icon-burger .line {
 }
 
 .section h1 {
-    color: gold;
+    color: rgb(255, 45, 45);
     padding-bottom: 30px;
 }
 
@@ -641,7 +641,8 @@ nav .icon-burger .line {
 
 .contact-info-item .icon .fa {
     font-size: 25px;
-    color: var(--skin-color);
+    color: #03e9f4;
+    filter: hue-rotate(110deg);
 }
 
 .contact-info-item h4 {
@@ -661,7 +662,7 @@ nav .icon-burger .line {
 }
 
 .contact-title {
-    color: var(--skin-color);
+    color: rgb(255, 45, 45);
     margin-bottom: 30px;
 }
 

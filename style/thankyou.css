@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    font-family: Helvetica,Tahoma;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body.hide-scrolling {
+    overflow-y: hidden;
+}
+
+.backgrounds {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    z-index: -1;
+    filter:brightness(0.5);
+}
+    
+.backgrounds .background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+    filter: brightness(0.5);
+}
+
+.overlay:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+.card {
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.ok-icon {
+    font-size: 100px;
+}
+
+.card:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     
+}
+
+.thanks {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 375px) {
+    .ok-icon {
+        font-size: 60px;
+    }
+    .thanks {
+        font-size: 35px;
+    }
+}
