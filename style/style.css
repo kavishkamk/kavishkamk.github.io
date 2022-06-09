@@ -1280,6 +1280,10 @@ footer p {
     .lonchIcon {
         width: 30px;
     }
+
+    #hero-current-status {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 360px) {
