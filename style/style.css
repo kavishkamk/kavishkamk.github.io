@@ -806,7 +806,13 @@ nav .icon-burger .line {
 }
 
 .contact-info-item {
-    margin-bottom: 60px
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 360px) { 
+    .contact-info-item {
+        margin-bottom: 40px;
+    }
 }
 
 .contact-info-item .icon .fa {

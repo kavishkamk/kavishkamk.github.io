@@ -66,7 +66,7 @@ document.querySelector(".pp-close").addEventListener("click", () => {
 
 // hide when click outside of the pop-up
 document.addEventListener("click", (e) => {
-  console.log(e.target.classList);
+  
   if(e.target.classList.contains("pp-inner")) {
     togglePortfolioPopup();
     $('#side-social-bar').show();
