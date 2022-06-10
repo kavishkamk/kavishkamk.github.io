@@ -88,6 +88,11 @@ $(document).ready(function() {
 	// track scroll bar in main
 	$(window).on('scroll load', function(e){
 
+    // set project list div size first load
+    var varHei = document.getElementById('keeper-div').clientHeight;
+    document.getElementById("project-list-div").setAttribute("style",`height:${varHei}px`);
+    document.getElementById("project-main-grid").setAttribute("style",`height:${varHei - 75}px`);
+
     var windowHeight = window.innerHeight / 3;
     var scrollHeight = $(window).scrollTop();
     var windowWidth = window.innerWidth;
@@ -116,6 +121,13 @@ $(document).ready(function() {
 			$('.rocket-nav').hide();
 		}
 	});
+
+  $( window ).resize(function() {
+    var varHei = document.getElementById('keeper-div').clientHeight;
+    document.getElementById("project-list-div").setAttribute("style",`height:${varHei}px`);
+    document.getElementById("project-main-grid").setAttribute("style",`height:${varHei - 75}px`);
+    
+  });
 
 });
 

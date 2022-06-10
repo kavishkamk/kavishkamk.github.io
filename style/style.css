@@ -1159,6 +1159,56 @@ footer p {
 	transform: rotate(-45deg);
 }
 
+.project-main-grid {
+    overflow-y: auto;
+    padding: 10px 5px 0 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: auto 39px;
+    margin: 2px 0px 5px 5px;
+    cursor: pointer;
+    padding: 2px 0;
+    background-color: white;
+}
+
+.project-grid-title {
+    padding: 1px 5px;
+    text-align: left;
+    color: black;
+    line-height: 1.2;
+}
+
+.project-list-bar {
+    margin-top: 10px;
+}
+
+.project-grid .btn-github {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.project-grid:hover {
+    background: #03e9f4;
+    color: #050801;
+}
+
+.style-s::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+.style-s::-webkit-scrollbar-track {
+    background: rgb(2,0,36);
+    border-radius: 10px;
+}
+  
+.style-s::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-clip: content-box;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
 @media screen and (max-width: 768px) {
 	nav .logo {
 		float: none;
