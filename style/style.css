@@ -38,7 +38,7 @@ main.fade-out {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
     z-index: -1;
-    filter:brightness(0.9);
+    filter:brightness(1);
 }
     
 .backgrounds .background {

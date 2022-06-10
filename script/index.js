@@ -90,9 +90,16 @@ $(document).ready(function() {
 
     var windowHeight = window.innerHeight / 3;
     var scrollHeight = $(window).scrollTop();
+    var windowWidth = window.innerWidth;
 
-    if (scrollHeight < windowHeight) {
-      changeBrightness(scrollHeight, windowHeight);
+    if(windowWidth < 1000) {
+      if (scrollHeight < windowHeight) {
+        changeBrightness(scrollHeight, windowHeight, 0.2, 0.5);
+      }
+    } else {
+      if (scrollHeight < windowHeight) {
+        changeBrightness(scrollHeight, windowHeight, 0.2, 1);
+      }
     }
     
 		// hide or show rocket launch
@@ -144,8 +151,8 @@ function openInNewTab(url) {
   window.open(url, '_blank').focus();
 }
 
-function changeBrightness(currentValue, maxValue) {
-    backgroundImg.style.filter = `brightness(${scale(currentValue, 0, maxValue, 1, 0.2)})`;
+function changeBrightness(currentValue, maxValue, minRange, maxRange) {
+    backgroundImg.style.filter = `brightness(${scale(currentValue, 0, maxValue, maxRange, minRange)})`;
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
