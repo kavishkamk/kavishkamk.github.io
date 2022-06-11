@@ -1172,6 +1172,7 @@ footer p {
     cursor: pointer;
     padding: 2px 0;
     background-color: white;
+    min-height: 40px;
 }
 
 .project-grid-title {
@@ -1186,9 +1187,10 @@ footer p {
 }
 
 .project-grid .btn-github {
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    right: 5px;
 }
 
 .project-grid:hover {
