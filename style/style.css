@@ -1167,6 +1167,7 @@ footer p {
 .project-grid {
     display: grid;
     grid-template-columns: auto 39px;
+    position: relative;
     margin: 2px 0px 5px 5px;
     cursor: pointer;
     padding: 2px 0;
@@ -1185,6 +1186,7 @@ footer p {
 }
 
 .project-grid .btn-github {
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
