@@ -23,9 +23,9 @@ body.hide-scrolling {
     overflow-y: hidden;
 }
 
-/* main {
+main {
     transition: all 0.4s ease-in-out;
-} */
+}
 
 main.fade-out {
     opacity: 0;
