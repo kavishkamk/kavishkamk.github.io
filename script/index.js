@@ -154,7 +154,23 @@ function togglePortfolioPopup() {
 }
 
 function portfolioItemDetails(projectItem) {
-  document.querySelector(".pp-thimbnail img").src = projectItem.querySelector(".project-item-thumbanail img").src;
+  const imgList = projectItem.querySelectorAll(".project-item-thumbanail input");
+  let imgContainer = document.querySelector(".pp-thimbnail .carousel-inner");
+  imgContainer.innerHTML = "";
+  console.log(imgContainer);
+  let count = 0;
+  imgList.forEach(element => {
+    let div = document.createElement('div');
+    div.classList.add('carousel-item');
+    if (count === 0) {
+      div.classList.add('active');
+      count++;
+    }
+    const image = document.createElement("img");
+    image.src = element.value;
+    div.appendChild(image);
+    imgContainer.appendChild(div);
+  });
   document.querySelector(".pp-header h3").innerHTML = projectItem.querySelector(".project-item-title").innerHTML;
   document.querySelector(".pp-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
 }
