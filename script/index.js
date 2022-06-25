@@ -156,21 +156,33 @@ function togglePortfolioPopup() {
 function portfolioItemDetails(projectItem) {
   const imgList = projectItem.querySelectorAll(".project-item-thumbanail input");
   let imgContainer = document.querySelector(".pp-thimbnail .carousel-inner");
+  let indicatorContainer = document.querySelector(".pp-thimbnail .carousel-indicators");
   imgContainer.innerHTML = "";
-  console.log(imgContainer);
+  indicatorContainer.innerHTML = "";
+  
   let count = 0;
   imgList.forEach(element => {
     let div = document.createElement('div');
+    let indiBtn = document.createElement('button');
     div.classList.add('carousel-item');
+    div.setAttribute("data-bs-interval", 3000)
+    indiBtn.type = "button";
+    indiBtn.setAttribute("data-bs-target", "#project-t-bar");
+    indiBtn.setAttribute("data-bs-slide-to", count);
+    indiBtn.setAttribute("aria-label", "Slide " + (count + 1));
     if (count === 0) {
       div.classList.add('active');
-      count++;
+      indiBtn.setAttribute("aria-current", true);
+      indiBtn.classList.add('active');
     }
+    count++;
     const image = document.createElement("img");
     image.src = element.value;
     div.appendChild(image);
     imgContainer.appendChild(div);
+    indicatorContainer.appendChild(indiBtn);
   });
+  
   document.querySelector(".pp-header h3").innerHTML = projectItem.querySelector(".project-item-title").innerHTML;
   document.querySelector(".pp-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
 }
