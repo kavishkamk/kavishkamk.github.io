@@ -183,15 +183,16 @@ main.fade-out {
 }
 
 .profile-photo {
-  width: 150px;
-  transition: 1s ease;
+    height: 180px;
+    transition: 1s ease;
+    border-radius: 10px;
 }
 
 .profile-photo:hover{
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  transition: 1s ease;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;
 }
 
 #hero-social-bar {
