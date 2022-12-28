@@ -44,7 +44,7 @@
             <h1 class="hero__logo" data-aos="zoom-in"><img src="images/profile_picture1.jpg" class="profile-photo"></h1>
             <h2 class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Hi, I'm Madhushan
                 Karunachandra</h2>
-            <h4 class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">Software Developer
+            <h4 class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">Software Engineer
             </h4>
             <!-- <h6 id="hero-current-status" class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="700">(Software Engineering Undergraduate at Sri Lanka Technological Campus)</h6> -->
         </div>
@@ -56,7 +56,8 @@
     <main>
         <section class="section bg-dark" id="about">
             <h1>About Me</h1>
-            <p>Hi, I'm Madhushan. I am <b>MERN Stack</b> Developer, 3<sup>rd</sup> year Undergraduate,
+            <p>Hi, I'm Madhushan. I am <b>MERN Stack</b> and <b>Java</b> Developer, <b>Associate Software Engineer</b>
+                at <b>Azend Technologies (Private) Limited</b>, 3<sup>rd</sup> year Undergraduate,
                 who follows the
                 <b>BSc (Hons) in Software Engineering Degree</b> Program at Sri Lanka Technological Campus.
                 I am really passionate about the Software Engineering field and working in a competitive and innovative
@@ -82,8 +83,9 @@
                 <img src="images/typescript.png" title="TypeScript" alt="TypeScript logo" />
                 <img src="images/jquery.png" alt="jQuery logo" title="jQuery" />
                 <img src="images/php.svg" title="PHP" alt="PHP logo" />
+                <img src="images/quarku.svg" title="Quarkus" alt="Quarkus logo" />
                 <img src="images/Spring_Framework-Logo.wine.png" title="Spring" alt="Spring logo" />
-                <!-- <img src="images/hibernate2.png" title="Hibernate" alt="Hibernate logo" /> -->
+                <img src="images/hibernate2.png" title="Hibernate" alt="Hibernate logo" />
                 <img src="images/JSP.jpg" title="JSP" alt="JSP logo" />
                 <img src="images/Servlets.jpg" title="Servlet" alt="Servlet logo" />>
                 <img src="images/JavaFX.png" title="JavaFX" alt="JavaFX logo" />
@@ -94,6 +96,7 @@
                 <img src="images/bootstrap.svg" title="Bootstrap" alt="Bootstrap logo" />
                 <img src="images/css.svg" title="CSS" />
                 <img src="images/mysql-official.svg" title="MySQL" alt="MySQL logo" />
+                <img src="images/Postgresql_elephant.svg" title="Postgresql" alt="Postgresql logo" />
                 <img src="images/microsoft-sql-server.svg" alt="SQL Server logo" title="SQL Server" />
                 <img src="images/mongoDB.png" alt="mongoDB logo" title="mongoDB" />
                 <img src="images/Apache_Maven_logo.svg" alt="maven logo" title="Maven" />
@@ -104,12 +107,88 @@
                 <img src="images/Docker.png" alt="docker logo" title="Docker" />
                 <img src="images/Kubernetes_logo.png" alt="kubernetes logo" title="Kubernetes" />
                 <img src="images/heroku-logo-svgrepo-com.svg" alt="heroku logo" title="Heroku" />
+                <img src="images/firebase-seeklogo.com.svg" alt="firebase logo" title="firebase" />
             </div>
         </section>
         <section class="section" id="projects">
             <h1>Projects</h1>
             <div class="project-container container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center inner-pro-container">
+                    <!--     --------------------------------------------     -->
+                    <div class="col">
+                        <div class="project-item bg-white" data-aos="flip-right" data-aos-easing="linear"
+                            data-aos-duration="2000">
+                            <div class="project-item-thumbanail shadow-lg p-3 mb-5 bg-body">
+                                <img src="images/projects/alpha-hotel-arthitecture-diagram.png"
+                                    alt="Hotel Reservation System Architecture diagram">
+                                <input type="hidden" value="images/projects/alpha-hotel-arthitecture-diagram.png"
+                                    class="images-value">
+                            </div>
+                            <h3 class="project-item-title shadow-sm p-3 mb-5 bg-body ">Hotel Reservation System</h3>
+                            <div class="pro-btn-bar">
+                                <button type="button" class="btn btn-outline-secondary view-project-btn">view
+                                    project</button>
+                                <a href="https://github.com/kavishkamk/hotel-reservation-alpha.git" target="_blank"
+                                    class="btn btn-social-icon btn-github">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                            </div>
+                            <div class="project-item-details">
+                                <div class="description">
+                                    <p>This is a Hotel Reservation System created by <b>MERN stack</b> and used <b>Micro
+                                            Services Architecture</b> to develop this system
+                                    </p>
+                                    <ul>
+                                        <li>Micro Services Architecture</li>
+                                        <li>MVC model for develop each service</li>
+                                        <li>Mono Repost for manage the projects</li>
+                                        <li>MEARN stack for development (TypeScript backend)
+                                            <ul>
+                                                <li>Companies can publish items and edit items' details</li>
+                                                <li>Clients can bid on items</li>
+                                                <li>Both users can view the list of the current items</li>
+                                                <li>Both users can subscribe to items</li>
+                                                <li>Both users can view the details of subscribed items</li>
+                                            </ul>
+                                        </li>
+                                        <li>NATS Streaming Server for event handling</li>
+                                        <li>Ingress-Nginx as Loadbalancer</li>
+                                        <li>Skaffold for authomate development</li>
+                                        <li>publish npm package as shared library for the project</li>
+                                        <li>Use docker hub for image publish</li>
+                                        <li>bull.js for handle expiration service</li>
+                                        <li>use redis for expiration service</li>
+                                        <li>use mongoDB as a database</li>
+                                        <li>use docker for containarize the each service</li>
+                                        <li>kubernetes for manage containers</li>
+                                        <li>use Google kubernetes engine for host micro services and use it as a
+                                            development cluster</li>
+                                        <li>Default error handling</li>
+                                        <li>Backend validation</li>
+                                        <li>Authentication and Autherization (JWT token, email verifications)</li>
+                                    </ul>
+                                </div>
+                                <div class="genaral-info">
+                                    <ul>
+                                        <li><b>Created - &nbsp;</b><span>2022</span></li>
+                                        <li>
+                                            <p class="pp-p">Technologies used - &nbsp;</p>
+                                            <p class="pp-lan">Micro Services Architecture, MVC model, MERN stack,
+                                                TypeScript, Bull.js, redis, mongoDB, Docker, Kubernetes, Google Cloud
+                                                Kubernetes Engine, NATS Streaming Server, Ingress-Nginx, Skaffold, Mono
+                                                repos, postman, minikube, Docker Desktop, Publish NPM package
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="https://github.com/kavishkamk/hotel-reservation-alpha.git" target="_blank"
+                                    class="btn btn-block btn-social btn-github">
+                                    <span class="fa fa-github"></span> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--     --------------------------------------------     -->
                     <div class="col">
                         <div class="project-item bg-white" data-aos="flip-right" data-aos-easing="linear"
                             data-aos-duration="2000">
