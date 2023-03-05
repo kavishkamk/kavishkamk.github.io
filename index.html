@@ -158,10 +158,10 @@
                                     <ul>
                                         <li>Micro Services Architecture</li>
                                         <li>MVC model for develop each service</li>
-                                        <li>Mono Repost for manage the projects</li>
+                                        <li>Mono Repos for manage the projects</li>
                                         <li>MERN stack for development (TypeScript backend)</li>
-                                        <li>NATS Streaming Server for event handling</li>
-                                        <li>Ingress-Nginx as Loadbalancer</li>
+                                        <li>NATS Streaming Server (Event Bus) for event handling</li>
+                                        <li>Ingress-Nginx as Ingress Controller and Loadbalancer</li>
                                         <li>Skaffold for automate development</li>
                                         <li>publish npm package as shared library for the project</li>
                                         <li>Use docker hub for image publish</li>
@@ -171,10 +171,13 @@
                                         <li>use docker for containerized the each service</li>
                                         <li>kubernetes for manage containers</li>
                                         <li>use Google kubernetes engine for host micro services and use it as a
-                                            development cluster</li>
+                                            development cluster and then convert to production cluster</li>
                                         <li>Default error handling</li>
                                         <li>Backend validation</li>
                                         <li>Authentication and Autherization (JWT token, email verifications)</li>
+                                        <li>Configure a domain for backend cluster</li>
+                                        <li>Configure a SSL certificate to server throug ingress-nginx</li>
+                                        <li>Front end hosted on vercel</li>
                                     </ul>
                                 </div>
                                 <div class="genaral-info">
@@ -319,7 +322,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--  ------------------------------------------    -->
+                    <!--  ------------------------------------------ cylone tea cloud   -->
                     <div class="col">
                         <div class="project-item bg-white" data-aos="flip-right" data-aos-easing="linear"
                             data-aos-duration="2000">
@@ -365,6 +368,103 @@
                                     </ul>
                                 </div>
                                 <a href="https://github.com/kavishkamk/ceylonTeaCloud.git" target="_blank"
+                                    class="btn btn-block btn-social btn-github">
+                                    <span class="fa fa-github"></span> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- crown cloath app ---------------------------------------------------   -->
+
+                    <div class="col">
+                        <div class="project-item bg-white" data-aos="flip-right" data-aos-easing="linear"
+                            data-aos-duration="2000">
+                            <div class="project-item-thumbanail shadow-lg p-3 mb-5 bg-body">
+                                <img src="images/projects/crown_cloth_homepage.png" alt="crown cloth homepage">
+                                <input type="hidden" value="images/projects/crown_cloth_homepage.png"
+                                    class="images-value">
+                                <input type="hidden" value="images/projects/crown_cloth_category.png"
+                                    class="images-value">
+                                <input type="hidden" value="images/projects/crown_cloth_cartpage.png"
+                                    class="images-value">
+                                <input type="hidden" value="images/projects/crown_cloth_categories.png"
+                                    class="images-value">
+                                <input type="hidden" value="images/projects/crown_cloth_googleauth.png"
+                                    class="images-value">
+                                <input type="hidden" value="images/projects/crown_cloth_signup.png"
+                                    class="images-value">
+                                <input type="hidden" value="images/projects/crown_cloth_cart.png" class="images-value">
+                            </div>
+                            <h3 class="project-item-title shadow-sm p-3 mb-5 bg-body ">Mege Clothing</h3>
+                            <div class="pro-btn-bar">
+                                <button type="button" class="btn btn-outline-secondary view-project-btn">view
+                                    project</button>
+                                <a href="https://github.com/kavishkamk/mega-cloting.git" target="_blank"
+                                    class="btn btn-social-icon btn-github">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                            </div>
+                            <div class="project-item-details">
+                                <div class="description">
+                                    <p>This is an Ecommerce Site</p>
+                                    <ul>
+                                        <li>created using React.js</li>
+                                        <li>Authentication with Firebase</li>
+                                        <li>used Firestore as a Database</li>
+                                        <li>Deploy with netlify :
+                                            <a href="https://flourishing-crumble-1999cf.netlify.app/" target="_blank">
+                                                Hosted URL
+                                            </a>
+                                        </li>
+                                        <li>used styled components</li>
+                                        <li>Context for global state handling</li>
+                                        <li>React router v6</li>
+                                        <li>migrate context to redux store
+                                            <a href="https://github.com/kavishkamk/mega-cloting/tree/v1"
+                                                target="_blank">
+                                                (v1)
+                                            </a>
+                                        </li>
+                                        <li>redux-persist for cashing</li>
+                                        <li>use redux thunk
+                                            <a href="https://github.com/kavishkamk/mega-cloting/tree/v2"
+                                                target="_blank">
+                                                (v2)
+                                            </a>
+                                        </li>
+                                        <li>use redex-saga
+                                            <a href="https://github.com/kavishkamk/mega-cloting/tree/v3"
+                                                target="_blank">
+                                                (v3)
+                                            </a>
+                                        </li>
+                                        <li>add stripe payments</li>
+                                        <li>add serverless function for payments (using netlify serverless functions)
+                                        </li>
+                                        <li>
+                                            used type script
+                                            <a href="https://github.com/kavishkamk/mega-cloting/tree/v4"
+                                                target="_blank">
+                                                (v4)
+                                            </a>
+                                        </li>
+                                        <li>test memo, lazy reload</li>
+                                    </ul>
+                                </div>
+                                <div class="genaral-info">
+                                    <ul>
+                                        <li><b>Created - &nbsp;</b><span>2023</span></li><br>
+                                        <li>
+                                            <p class="pp-p">Technologies used - &nbsp;</p>
+                                            <p class="pp-lan" style="text-transform: lowercase;">React.js,
+                                                JavaScriptyarn, google firebase authentication and firestore,
+                                                styled-components, netlify, react-router-dom(v6)
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="https://github.com/kavishkamk/mega-cloting.git" target="_blank"
                                     class="btn btn-block btn-social btn-github">
                                     <span class="fa fa-github"></span> View on GitHub
                                 </a>
@@ -606,73 +706,6 @@
                                     </ul>
                                 </div>
                                 <a href="https://github.com/kavishkamk/places-experts-backend.git" target="_blank"
-                                    class="btn btn-block btn-social btn-github">
-                                    <span class="fa fa-github"></span> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- crown cloath app ---------------------------------------------------   -->
-
-                    <div class="col">
-                        <div class="project-item bg-white" data-aos="flip-right" data-aos-easing="linear"
-                            data-aos-duration="2000">
-                            <div class="project-item-thumbanail shadow-lg p-3 mb-5 bg-body">
-                                <img src="images/projects/crown_cloth_homepage.png" alt="crown cloth homepage">
-                                <input type="hidden" value="images/projects/crown_cloth_homepage.png"
-                                    class="images-value">
-                                <input type="hidden" value="images/projects/crown_cloth_category.png"
-                                    class="images-value">
-                                <input type="hidden" value="images/projects/crown_cloth_cartpage.png"
-                                    class="images-value">
-                                <input type="hidden" value="images/projects/crown_cloth_categories.png"
-                                    class="images-value">
-                                <input type="hidden" value="images/projects/crown_cloth_googleauth.png"
-                                    class="images-value">
-                                <input type="hidden" value="images/projects/crown_cloth_signup.png"
-                                    class="images-value">
-                                <input type="hidden" value="images/projects/crown_cloth_cart.png" class="images-value">
-                            </div>
-                            <h3 class="project-item-title shadow-sm p-3 mb-5 bg-body ">Mege Clothing</h3>
-                            <div class="pro-btn-bar">
-                                <button type="button" class="btn btn-outline-secondary view-project-btn">view
-                                    project</button>
-                                <a href="https://github.com/kavishkamk/mega-cloting.git" target="_blank"
-                                    class="btn btn-social-icon btn-github">
-                                    <span class="fa fa-github"></span>
-                                </a>
-                            </div>
-                            <div class="project-item-details">
-                                <div class="description">
-                                    <p>This is an Ecommerce Site</p>
-                                    <ul>
-                                        <li>created using React.js</li>
-                                        <li>Authentication with Firebase</li>
-                                        <li>used Firestore as a Database</li>
-                                        <li>Deploy with netlify :
-                                            <a href="https://flourishing-crumble-1999cf.netlify.app/" target="_blank">
-                                                Hosted URL
-                                            </a>
-                                        </li>
-                                        <li>used styled components</li>
-                                        <li>Context for global state handling</li>
-                                        <li>React router v6</li>
-                                    </ul>
-                                </div>
-                                <div class="genaral-info">
-                                    <ul>
-                                        <li><b>Created - &nbsp;</b><span>2023</span></li><br>
-                                        <li>
-                                            <p class="pp-p">Technologies used - &nbsp;</p>
-                                            <p class="pp-lan" style="text-transform: lowercase;">React.js,
-                                                JavaScriptyarn, google firebase authentication and firestore,
-                                                styled-components, netlify, react-router-dom(v6)
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="https://github.com/kavishkamk/mega-cloting.git" target="_blank"
                                     class="btn btn-block btn-social btn-github">
                                     <span class="fa fa-github"></span> View on GitHub
                                 </a>
@@ -991,8 +1024,15 @@
                             data-aos-easing="linear" data-aos-duration="2000">
                             <div class="project-main-grid bg-secondary rounded style-s" id="project-main-grid">
                                 <div class="project-grid rounded">
-                                    <span class="project-grid-title">WiKi API (RESTfull API)</span>
-                                    <a href="https://github.com/kavishkamk/Wiki-API.git" target="_blank"
+                                    <span class="project-grid-title">Test Gatsby Blog Site</span>
+                                    <a href="https://github.com/kavishkamk/gatsby-blog.git" target="_blank"
+                                        class="btn btn-social-icon btn-social-icon-s btn-github">
+                                        <span class="fa fa-github"></span>
+                                    </a>
+                                </div>
+                                <div class="project-grid rounded">
+                                    <span class="project-grid-title">Mini Midi Music Player</span>
+                                    <a href="https://github.com/kavishkamk/MiniMidiPlayer.git" target="_blank"
                                         class="btn btn-social-icon btn-social-icon-s btn-github">
                                         <span class="fa fa-github"></span>
                                     </a>
@@ -1005,8 +1045,8 @@
                                     </a>
                                 </div>
                                 <div class="project-grid rounded">
-                                    <span class="project-grid-title">Mini Midi Music Player</span>
-                                    <a href="https://github.com/kavishkamk/MiniMidiPlayer.git" target="_blank"
+                                    <span class="project-grid-title">WiKi API (RESTfull API)</span>
+                                    <a href="https://github.com/kavishkamk/Wiki-API.git" target="_blank"
                                         class="btn btn-social-icon btn-social-icon-s btn-github">
                                         <span class="fa fa-github"></span>
                                     </a>
