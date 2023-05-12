@@ -317,7 +317,7 @@ nav .icon-burger .line {
     background: linear-gradient(0deg, #000, #272727);
 }
 
-.block:before,
+/* .block:before,
 .block:after {
     content: '';
     position: absolute;
@@ -330,7 +330,7 @@ nav .icon-burger .line {
     height: calc(100% + 4px);
     z-index: -1;
     animation: steam 20s linear infinite;
-}
+} */
 
 @keyframes steam {
     0% {
@@ -346,9 +346,9 @@ nav .icon-burger .line {
     }
 }
 
-.block:after {
+/* .block:after {
     filter: blur(50px);
-}
+} */
 
 /* download button */
 
