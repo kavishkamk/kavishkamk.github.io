@@ -1,8 +1,6 @@
 if (window.innerWidth < 550) {
-  $('#about, #skills, #projects').removeClass('block');
   $('.word').text('Madhushan Karunachandra');
 } else {
-  $('#about, #skills, #projects').addClass('block');
 
   var words = ['Madhushan Karunachandra'],
     part,
