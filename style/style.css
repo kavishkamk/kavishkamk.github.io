@@ -1475,3 +1475,45 @@ footer p {
         transform: translateY(0%);
     }
 }
+
+.zoom-in-profile {
+    animation: zoomIn 2s forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.fade-up-hero-text {
+    opacity: 0;
+    transform: translateY(100vh);
+    animation: fadeUp 1.5s ease forwards;
+}
+
+.fade-up-hero-d-text {
+    opacity: 0;
+    transform: translateY(100vh);
+    animation: fadeUp 1.8s ease forwards;
+}
+
+.fade-up-hero-scroll {
+    opacity: 0;
+    transform: translateY(100vh);
+    animation: fadeUp 2.1s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100vh);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
