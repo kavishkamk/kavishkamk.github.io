@@ -139,7 +139,7 @@ const loadImg = function (entries, observer) {
 
   entry.target.style = "background-image: url(" + entry.target.dataset.src + ");";
 
-
+  observer.unobserve(entry.target);
 };
 
 const imgObserver = new IntersectionObserver(loadImg, {
