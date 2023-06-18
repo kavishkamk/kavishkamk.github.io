@@ -129,26 +129,6 @@ $(document).ready(function() {
 
 });
 
-const imgTargets = document.querySelectorAll("div[data-src]");
-
-const loadImg = function (entries, observer) {
-  const [entry] = entries;
-  
-
-  if(!entry.isIntersecting) return;
-
-  entry.target.style = "background-image: url(" + entry.target.dataset.src + ");";
-
-  observer.unobserve(entry.target);
-};
-
-const imgObserver = new IntersectionObserver(loadImg, {
-  root: null,
-  threshold: 0
-});
-
-imgTargets.forEach(img => imgObserver.observe(img));
-
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
