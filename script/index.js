@@ -1,54 +1,54 @@
-if (window.innerWidth < 550) {
-  $('.word').text('Madhushan Karunachandra');
-} else {
+// if (window.innerWidth < 550) {
+//   $('.word').text('Madhushan Karunachandra');
+// } else {
 
-  var words = ['Madhushan Karunachandra'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
-var wordflick = function () {
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.word').text(part);
-  },speed);
-};
+//   var words = ['Madhushan Karunachandra'],
+//     part,
+//     i = 0,
+//     offset = 0,
+//     len = words.length,
+//     forwards = true,
+//     skip_count = 0,
+//     skip_delay = 15,
+//     speed = 70;
+// var wordflick = function () {
+//   setInterval(function () {
+//     if (forwards) {
+//       if (offset >= words[i].length) {
+//         ++skip_count;
+//         if (skip_count == skip_delay) {
+//           forwards = false;
+//           skip_count = 0;
+//         }
+//       }
+//     }
+//     else {
+//       if (offset == 0) {
+//         forwards = true;
+//         i++;
+//         offset = 0;
+//         if (i >= len) {
+//           i = 0;
+//         }
+//       }
+//     }
+//     part = words[i].substr(0, offset);
+//     if (skip_count == 0) {
+//       if (forwards) {
+//         offset++;
+//       }
+//       else {
+//         offset--;
+//       }
+//     }
+//     $('.word').text(part);
+//   },speed);
+// };
 
-$(document).ready(function () {
-  wordflick();
-});
-}
+// $(document).ready(function () {
+//   wordflick();
+// });
+// }
 
 const backgroundImg = document.querySelector(".backgrounds");
 let brightnessVal = 0.9;
@@ -128,6 +128,26 @@ $(document).ready(function() {
   });
 
 });
+
+const imgTargets = document.querySelectorAll("div[data-src]");
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+  
+
+  if(!entry.isIntersecting) return;
+
+  entry.target.style = "background-image: url(" + entry.target.dataset.src + ");";
+
+
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0
+});
+
+imgTargets.forEach(img => imgObserver.observe(img));
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
